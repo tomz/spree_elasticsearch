@@ -15,8 +15,8 @@ module Spree
           results.each(*args, &block)
         end
         
-        def in_groups_of(size)
-          results.in_groups_of(size)
+        def in_groups_of(size, fill_with = nil)
+          results.in_groups_of(size, fill_with)
         end
 
         def empty?
