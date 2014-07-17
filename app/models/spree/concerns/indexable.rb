@@ -14,6 +14,10 @@ module Spree
         def each(*args, &block)
           results.each(*args, &block)
         end
+        
+        def in_groups_of(size)
+          results.in_groups_of(size)
+        end
 
         def empty?
           count == 0
